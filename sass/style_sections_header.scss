@@ -1,0 +1,54 @@
+.section-header {
+	background-color: $green-main;
+	color: #fff;
+	height: 590px;
+}
+
+.container-left {
+	float: left;
+	line-height: 0;
+	margin: 76px 0 0 140px;
+
+	h1 {
+		font-size: 100px;
+		font-weight: bold;
+	}
+
+	h3 {
+		font-size: 54px;
+	}
+
+	h4 {
+		font-size: 34px;
+	}
+
+	h5 {
+		border-bottom: 1px solid #fff;
+		width: 244px;
+	}
+
+	h6 {
+		font-size: 18px;
+		font-style: italic;
+	}
+}
+
+.container-right {
+	background: rgba(#000, 0.2);
+	float: right;
+	height: 85px;
+	margin-top: 80px;
+	transform: skew(-30deg) translateX(40px);
+	width: 430px;
+
+	p {
+		font-size: 18px;
+		padding-right: 180px;
+		text-align: right;
+		transform: skew(30deg);
+	}
+}
+
+.container-bottom {
+	text-align: center;
+}
