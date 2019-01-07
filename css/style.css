@@ -120,4 +120,129 @@ body {
   color: #303030;
   cursor: pointer;
 }
+
+.section-about {
+  text-align: center;
+}
+
+.section-about h1 {
+  color: #303030;
+  font-size: 45px;
+  line-height: 15px;
+}
+
+.section-about h2 {
+  color: #979797;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+.section-about h3 {
+  border-bottom: 1px solid #dfdfdf;
+  margin: 0 auto;
+  width: 109px;
+}
+
+.section-about h4 {
+  color: #979797;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.section-about span {
+  color: #39a38f;
+}
+
+.section-about-clients {
+  background-color: #39a38f;
+  color: #fff;
+  padding: 80px 145px;
+}
+
+.section-about-clients h2 {
+  color: #fff;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.section-about-clients h3 {
+  border-bottom: none;
+  font-size: 23px;
+  font-weight: normal;
+  line-height: 10px;
+  width: 100%;
+}
+
+.section-about-clients h4 {
+  border-bottom: 1px solid #fff;
+  margin: 20px auto;
+  width: 131px;
+}
+
+.section-about-clients img {
+  margin: 0 20px;
+}
+
+.section-about-features {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 207px 1fr 207px 1fr 207px 1fr;
+      grid-template-columns: 1fr 207px 1fr 207px 1fr 207px 1fr;
+}
+
+.section-about-features div h4 {
+  color: #303030;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.section-about-features div p {
+  color: #707070;
+  font-size: 13px;
+}
+
+.section-about-features div span {
+  color: #39a38f;
+}
+
+.section-about-features-left {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+
+.section-about-features-center {
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+}
+
+.section-about-features-right {
+  -ms-grid-column: 6;
+      grid-column-start: 6;
+}
+
+.section-about-numbers {
+  background-color: #f0f0f0;
+  color: #39a38f;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 25px;
+  padding: 65px 170px 40px;
+}
+
+.section-about-numbers div {
+  display: inline-block;
+  margin: 0 25px;
+}
+
+.section-about-numbers div img, .section-about-numbers div p {
+  display: inline-block;
+  text-align: left;
+}
+
+.section-about-numbers span {
+  color: #7a7a7a;
+  font-size: 18px;
+  font-weight: normal;
+}
 /*# sourceMappingURL=style.css.map */

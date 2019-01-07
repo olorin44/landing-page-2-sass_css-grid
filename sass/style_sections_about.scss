@@ -1,0 +1,124 @@
+//styles for section about
+
+.section-about {
+	text-align: center;
+
+	h1 {
+		color: #303030;
+		font-size: 45px;
+		line-height: 15px;
+	}
+
+	h2 {
+		color: #979797;
+		font-size: 30px;
+		font-weight: normal;
+		line-height: 20px;
+	}
+
+	h3 {
+		border-bottom: 1px solid #dfdfdf;
+		margin: 0 auto;
+		width: 109px;
+	}
+
+	h4 {
+		color: #979797;
+		font-size: 17px;
+		font-weight: normal;
+	}
+
+	span {
+		color: #39a38f;
+	}
+}
+
+.section-about-clients {
+	background-color: #39a38f;
+	color: #fff;
+	padding: 80px 145px;
+
+	h2 {
+		color: #fff;
+		font-size: 27px;
+		font-weight: bold;
+	}
+
+	h3 {
+		border-bottom: none;
+		font-size: 23px;
+		font-weight: normal;
+		line-height: 10px;
+		width: 100%;
+	}
+
+	h4 {
+		border-bottom: 1px solid #fff;
+		margin: 20px auto;
+		width: 131px;
+	}
+
+	img {
+		margin: 0 20px;
+	}
+}
+
+.section-about-features {
+	display: grid;
+	grid-template-columns: 1fr 207px 1fr 207px 1fr 207px 1fr;
+}
+
+.section-about-features div {
+
+	h4 {
+		color: #303030;
+		font-size: 18px;
+		font-weight: normal;
+	}
+
+	p {
+		color: #707070;
+		font-size: 13px;
+	}
+
+	span {
+		color: #39a38f;
+	}
+}
+
+.section-about-features-left {
+	grid-column-start: 2;
+}
+
+.section-about-features-center {
+	grid-column-start: 4;
+}
+
+.section-about-features-right {
+	grid-column-start: 6;
+}
+
+.section-about-numbers {
+	background-color: #f0f0f0;
+	color: #39a38f;
+	font-size: 50px;
+	font-weight: bold;
+	line-height: 25px;
+	padding: 65px 170px 40px;
+
+	div {
+		display: inline-block;
+		margin: 0 25px;
+
+		img, p {
+			display: inline-block;
+			text-align: left;
+		}
+	}
+
+	span {
+		color: #7a7a7a;
+		font-size: 18px;
+		font-weight: normal;
+	}
+}
