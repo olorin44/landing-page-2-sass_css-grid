@@ -1,0 +1,54 @@
+//styles for section menu:
+
+#menu-toggle input {
+	display: none;
+}
+
+.nav-links {
+	list-style-type: none;
+
+	a {
+		color: #c0c0c0;
+		font-size: 14px;
+		margin-left: 35px;
+		text-decoration: none;
+
+		&:hover, &:active {
+			color: #303030;
+		}
+	}
+
+	li {
+		display: inline-flex;
+	}
+}
+
+.container {
+	align-items: center;
+	display: flex;
+	height: 65px;
+	justify-content: space-around;
+
+	.section-menu-logo {
+		margin: 0 130px;
+	}
+}
+
+.section-menu {
+	border-bottom: 1px solid #dfdfdf;
+	color: #c0c0c0;
+}
+
+.section-menu-socialmedia {
+	margin-left: 110px;
+	margin-right: 155px;
+}
+
+.section-menu-socialmedia i {
+	margin: 0 10px;
+
+	&:hover {
+		color: #303030;
+		cursor: pointer;
+	}
+}

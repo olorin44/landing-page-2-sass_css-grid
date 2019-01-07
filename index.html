@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body>
-	<section class="section-header">
+	<section class="section-header" id="header">
 		<div class="container-left">
 			<h1>Roran.</h1>
 			<h3>PSD TEMPLATE</h3>
@@ -25,13 +25,41 @@
 			<img src="../images/section-header-arrows.png">
 		</div>
 	</section>
-	<section class="section-menu">menu</section>
-	<section class="section-about">about</section>
-	<section class="section-services">services</section>
+	<section class="section-menu">
+		<div class="container">
+			<a href="#" class="section-menu-logo">
+				<img src="images/section-menu-logo.png" alt="company logo">
+			</a>
+			<nav>
+				<div id="menu-toggle">
+					<input type="checkbox">
+					<span></span>
+					<span></span>
+					<span></span>
+					<ul class="nav-links" id="menu">
+						<li><a href="#header">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#team">Team</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="section-menu-socialmedia">
+				<i class="fab fa-linkedin-in"></i>
+				<i class="fab fa-pinterest-p"></i>
+				<i class="fab fa-twitter"></i>
+				<i class="fab fa-facebook-f"></i>
+			</div>
+		</div>
+	</section>
+	<section class="section-about" id="about">about</section>
+	<section class="section-services" id="services">services</section>
 	<section class="section-quote">quote</section>
-	<section class="section-team">team</section>
-	<section class="section-portfolio">portfolio</section>
-	<section class="section-contact">contact</section>
+	<section class="section-team" id="team">team</section>
+	<section class="section-portfolio" id="portfolio">portfolio</section>
+	<section class="section-contact" id="contact">contact</section>
 	<section class="section-footer">footer</section>	
 </body>
 </html>

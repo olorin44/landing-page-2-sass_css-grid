@@ -63,4 +63,61 @@ body {
 .container-bottom {
   text-align: center;
 }
+
+#menu-toggle input {
+  display: none;
+}
+
+.nav-links {
+  list-style-type: none;
+}
+
+.nav-links a {
+  color: #c0c0c0;
+  font-size: 14px;
+  margin-left: 35px;
+  text-decoration: none;
+}
+
+.nav-links a:hover, .nav-links a:active {
+  color: #303030;
+}
+
+.nav-links li {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.container {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  height: 65px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .section-menu-logo {
+  margin: 0 130px;
+}
+
+.section-menu {
+  border-bottom: 1px solid #dfdfdf;
+  color: #c0c0c0;
+}
+
+.section-menu-socialmedia {
+  margin-left: 110px;
+  margin-right: 155px;
+}
+
+.section-menu-socialmedia i {
+  margin: 0 10px;
+}
+
+.section-menu-socialmedia i:hover {
+  color: #303030;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
