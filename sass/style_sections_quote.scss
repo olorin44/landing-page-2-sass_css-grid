@@ -1,0 +1,54 @@
+//styles for section quote
+
+blockquote {
+	margin-bottom: .5em;
+	padding: .5em 2em .5em 3em;
+	position: relative;
+}
+
+blockquote::after {
+	bottom: -.8em;
+	content: '\201D';
+	float: right;
+	font-size: 10em;
+	opacity: .3;
+	position: absolute;
+	right: 1em;
+}
+
+blockquote::before {
+	content: '\201D';
+	font-size: 10em;
+	left: 0;
+	opacity: .3;
+	position: absolute;
+	top: -.2em;
+}
+
+.section-quote {
+	background-color: $green-main;
+	color: #fff;
+	padding: 50px 0;
+	text-align: center;
+
+	div {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	h5 {
+		border-bottom: 1px solid #fff;
+		margin: 0 auto;
+		width: 109px;
+	}
+
+	h6 {
+		font-size: 18px;
+		font-weight: normal;
+		margin-top: 24px;
+	}
+
+	p {
+		font-size: 21px;
+	}
+}
