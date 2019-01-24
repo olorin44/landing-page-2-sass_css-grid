@@ -1,0 +1,30 @@
+//styles for section team
+
+.carousel {
+	height: 430px;
+	width: 100%;
+
+	i {
+
+	}
+}
+
+.carousel-cell {
+	background-size: cover;
+	height: 300px;
+  	margin-right: 20px;
+  	width: 300px;
+}
+
+.flickity-page-dots .dot {
+	background-color: #d5d5d5;
+}
+
+.flickity-page-dots .dot.is-selected {
+	background-color: $green-main;
+}
+
+.section-team-content {
+	background-color: #f0f0f0;
+	height: 430px;
+}

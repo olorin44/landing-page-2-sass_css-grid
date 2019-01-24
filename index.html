@@ -4,7 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Page from PSD file with css grid">
-	<title>Document</title>
+	<title>site from psd with css grid</title>
+	<link rel="stylesheet" type="text/css" href="vendor/normalize.css">
+	<link rel="stylesheet" href="vendor/flickity.min.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -170,9 +172,142 @@
 			<h6>Jonathan Doe</h6>
 		</div>
 	</section>
-	<section class="section-team" id="team">team</section>
-	<section class="section-portfolio" id="portfolio">portfolio</section>
-	<section class="section-contact" id="contact">contact</section>
-	<section class="section-footer">footer</section>	
+	<section class="section-team" id="team">
+		<div class="section-team-title">
+			<h3>Meet...the team</h3>
+			<p>They are really nice!</p>
+			<h4></h4>
+		</div>
+		<div class="section-team-content">
+			<div class="carousel" id="carousel-main"></div>
+		</div>
+	</section>
+	<section class="section-portfolio" id="portfolio">
+		<div class="section-portfolio-title">
+			<h3>Portfolio</h3>
+			<p>This is what we've been working on</p>
+			<h4></h4>
+			<ul>
+				<li>Web</li>
+				<li>Digital Art</li>
+				<li>Ilustrations</li>
+				<li>Branding</li>
+				<li>All</li>
+			</ul>
+		</div>
+		<div class="section-portfolio-squares">
+			<div class="square1"></div>
+			<div class="square2"></div>
+			<div class="square3"></div>
+			<div class="square4"></div>
+			<div class="square5"></div>
+			<div class="square6">
+				<i class="fas fa-link fa-3x"></i>
+				<h4>Free Website PSD</h4>
+				<p>Web</p>
+			</div>
+			<div class="square7"></div>
+			<div class="square8"></div>
+		</div>
+	</section>
+	<section class="section-contact" id="contact">
+		<div class="section-contact-title">
+			<h3>Contact</h3>
+			<p>we would really love to hear from you!</p>
+			<h4></h4>
+		</div>
+		<div class="section-contact-background">
+			<div class="section-contact-company">
+				<h3>Roran<span>.</span></h3>
+			</div>
+			<div class="section-contact-form">
+				<form>
+					<fieldset class="section-contact-form-left">
+						<div class="section-contact-form-container">
+							<div>
+								<p>Your name</p>
+								<h5>required</h5>
+							</div>
+							<input type="text" id="uname" minlength="4" maxlength="12" required>
+						</div>
+						<div class="section-contact-form-container">
+							<div>
+								<p>Your email</p>
+								<h5>required</h5>
+							</div>
+							<input type="email" id="email" minlength="6" maxlength="20" required>
+						</div>
+						<div class="section-contact-form-container">
+							<div>
+								<p>Message</p>
+								<h5>required</h5>
+							</div>
+							<textarea name="message" cols="30" rows="8"></textarea>
+						</div>
+					</fieldset>
+					<fieldset class="section-contact-form-right">
+						<div class="section-contact-info">
+							<h3>Contactinfo</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at purus vulputate.<br><br>Vehicula nisi vitae, lobortis ante. Praesent sodales iaculis ultricies.</p>
+							<div>
+								<i class="fas fa-map-marker-alt fa-4x item1"></i>
+								<h4 class="item2">Rue de Halle 245<br>1000 Brussels</h4>
+								<i class="fas fa-mobile-alt fa-4x item3"></i>
+								<h4 class="item4">03 123 45 67<br>0412 345 678</h4>
+								<i class="fas fa-pencil-alt fa-4x item5"></i>
+								<h4 class="item6">info@roran.com<br>question@roran.com</h4>
+							</div>
+						</div>
+					</fieldset>
+					<button type="submit">Send</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<section class="section-footer">footer</section>
+	<script>
+		let galleryData = [
+			{
+				image: 'images/section-team-example-image.jpg',
+				title: 'person1',
+				description: '<p>Jonathan Doe</p><p>Creative Director</p>',
+				socialmedia: '<i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i>'
+			},
+			{
+				image: 'images/section-team-example-image.jpg',
+				title: 'person2',
+				description: '<p>Jaden Doe</p><p>Mastermind</p>',
+				socialmedia: '<i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i>'
+			},
+			{
+				image: 'images/section-team-example-image.jpg',
+				title: 'person3',
+				description: '<p>Mister Doe</p><p>Designer</p>',
+				socialmedia: '<i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i>'
+			},
+			{
+				image: 'images/section-team-example-image.jpg',
+				title: 'person4',
+				description: '<p>Lucy Doe</p><p>Tester</p>',
+				socialmedia: '<i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i>'
+			},
+			{
+				image: 'images/section-team-example-image.jpg',
+				title: 'person5',
+				description: '<p>Mat Doe</p><p>Graphic Designer</p>',
+				socialmedia: '<i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i>'
+			}
+		];
+	</script>
+	<script type="x-tmpl-mustache" id="gallery-template">
+		<div class="template-container">
+			<div class="carousel-cell" style="background-image: url( {{ image }} );"></div>
+			{{{ description }}} {{{ socialmedia }}}
+		</div>
+	</script>
+	<script src="vendor/flickity.pkgd.min.js"></script>
+	<script src="vendor/hash.js"></script>
+	<script src="vendor/mustache.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
