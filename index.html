@@ -13,18 +13,20 @@
 </head>
 <body>
 	<section class="section-header" id="header">
-		<div class="container-left">
-			<h1>Roran.</h1>
-			<h3>PSD TEMPLATE</h3>
-			<h4>By LunarTemplates</h4>
-			<h5></h5>
-			<h6>www.lunartemplates.com</h6>
+		<div class="section-header-container">
+			<div class="section-header-left">
+				<h1>Roran.</h1>
+				<h3>PSD TEMPLATE</h3>
+				<h4>By LunarTemplates</h4>
+				<h5></h5>
+				<h6>www.lunartemplates.com</h6>
+			</div>
+			<div class="section-header-right">
+				<p>Free to download<br>at lunartemplates.com</p>
+			</div>
 		</div>
-		<div class="container-right">
-			<p>Free to download<br>at lunartemplates.com</p>
-		</div>
-		<div class="container-bottom">
-			<img src="../images/section-header-arrows.png">
+		<div class="section-header-bottom">
+			<img src="images/section-header-arrows.png">
 		</div>
 	</section>
 	<section class="section-menu">
@@ -267,7 +269,7 @@
 	<section class="section-footer">
 		<div class="section-footer-container">
 			<p>&copy 2014 Roran. All rights reserved</p>
-			<a href="#header">^</a>
+			<a href="#header"><img src="images/section-footer-arrow.png" alt="arrow"></a>
 			<div class="section-footer-socialmedia">
 				<i class="fab fa-linkedin-in"></i>
 				<i class="fab fa-pinterest-p"></i>
@@ -281,39 +283,42 @@
 			{
 				image: 'images/section-team-example-image.jpg',
 				title: 'person1',
-				description: '<p>Jonathan Doe</p><p>Creative Director</p>',
-				socialmedia: '<i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i>'
+				description: '<div><h5>Jonathan Doe</h5><p>Creative Director</p></div>',
+				socialmedia: '<div><i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i></div>'
 			},
 			{
 				image: 'images/section-team-example-image.jpg',
 				title: 'person2',
-				description: '<p>Jaden Doe</p><p>Mastermind</p>',
-				socialmedia: '<i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i>'
+				description: '<div><h5>Jaden Doe</h5><p>Mastermind</p></div>',
+				socialmedia: '<div><i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i></div>'
 			},
 			{
 				image: 'images/section-team-example-image.jpg',
 				title: 'person3',
-				description: '<p>Mister Doe</p><p>Designer</p>',
-				socialmedia: '<i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i>'
+				description: '<div><h5>Mister Doe</h5><p>Designer</p></div>',
+				socialmedia: '<div><i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i></div>'
 			},
 			{
 				image: 'images/section-team-example-image.jpg',
 				title: 'person4',
-				description: '<p>Lucy Doe</p><p>Tester</p>',
-				socialmedia: '<i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i>'
+				description: '<div><h5>Lucy Doe</h5><p>Tester</p></div>',
+				socialmedia: '<div><i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i></div>'
 			},
 			{
 				image: 'images/section-team-example-image.jpg',
 				title: 'person5',
-				description: '<p>Mat Doe</p><p>Graphic Designer</p>',
-				socialmedia: '<i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i>'
+				description: '<div><h5>Mat Doe</h5><p>Graphic Designer</p></div>',
+				socialmedia: '<div><i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i></div>'
 			}
 		];
 	</script>
 	<script type="x-tmpl-mustache" id="gallery-template">
 		<div class="template-container">
-			<div class="carousel-cell" style="background-image: url( {{ image }} );"></div>
-			{{{ description }}} {{{ socialmedia }}}
+			<div class="carousel-cell" style="background-image: url( {{ image }} );">
+				<div class=cell-description>
+					{{{ description }}} {{{ socialmedia }}}
+				</div>
+			</div>
 		</div>
 	</script>
 	<script src="vendor/flickity.pkgd.min.js"></script>

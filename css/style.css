@@ -15,54 +15,58 @@ body {
   height: 590px;
 }
 
-.container-left {
-  float: left;
+.section-header-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.section-header-left {
   line-height: 0;
   margin: 76px 0 0 140px;
 }
 
-.container-left h1 {
+.section-header-left h1 {
   font-size: 100px;
-  font-weight: bold;
 }
 
-.container-left h3 {
+.section-header-left h3 {
   font-size: 54px;
 }
 
-.container-left h4 {
+.section-header-left h4 {
   font-size: 34px;
 }
 
-.container-left h5 {
+.section-header-left h5 {
   border-bottom: 1px solid #fff;
   width: 244px;
 }
 
-.container-left h6 {
+.section-header-left h6 {
   font-size: 18px;
   font-style: italic;
 }
 
-.container-right {
+.section-header-right {
   background: rgba(0, 0, 0, 0.2);
-  float: right;
   height: 85px;
   margin-top: 80px;
   transform: skew(-30deg) translateX(40px);
   width: 430px;
 }
 
-.container-right p {
+.section-header-right p {
   font-size: 18px;
   padding-right: 180px;
   text-align: right;
   transform: skew(30deg);
 }
 
-.container-bottom {
+.section-header-bottom {
   position: relative;
-  top: 80%;
+  top: 80px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
@@ -416,14 +420,66 @@ blockquote::before {
 
 .carousel {
   height: 430px;
+  padding-top: 56px;
   width: 100%;
 }
 
+.carousel::before {
+  border-width: 30px;
+  border-style: solid;
+  border-color: transparent transparent #f0f0f0;
+  content: "";
+  left: 50%;
+  margin-left: -30px;
+  position: absolute;
+  bottom: 100%;
+}
+
 .carousel-cell {
+  -ms-flex-align: end;
+      align-items: flex-end;
   background-size: cover;
+  display: -ms-flexbox;
+  display: flex;
   height: 300px;
   margin-right: 20px;
   width: 300px;
+}
+
+.cell-description {
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  height: 73px;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 18px;
+  width: 300px;
+}
+
+.cell-description h5 {
+  color: #303030;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1px;
+}
+
+.cell-description p {
+  color: #8c8c8c;
+  font-size: 14px;
+  line-height: 1px;
+}
+
+.cell-description i {
+  color: #c0c0c0;
+  margin-left: 18px;
+}
+
+.cell-description i:hover {
+  cursor: pointer;
+  color: #000;
 }
 
 .flickity-page-dots .dot {
@@ -777,8 +833,6 @@ blockquote::before {
 }
 
 .section-footer a {
-  font-size: 30px;
-  font-weight: bold;
   text-decoration: none;
   margin-right: 8%;
 }

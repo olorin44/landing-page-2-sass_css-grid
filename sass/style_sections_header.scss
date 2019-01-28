@@ -6,14 +6,17 @@
 	height: 590px;
 }
 
-.container-left {
-	float: left;
+.section-header-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.section-header-left {
 	line-height: 0;
 	margin: 76px 0 0 140px;
 
 	h1 {
 		font-size: 100px;
-		font-weight: bold;
 	}
 
 	h3 {
@@ -35,9 +38,8 @@
 	}
 }
 
-.container-right {
+.section-header-right {
 	background: rgba(#000, 0.2);
-	float: right;
 	height: 85px;
 	margin-top: 80px;
 	transform: skew(-30deg) translateX(40px);
@@ -51,9 +53,9 @@
 	}
 }
 
-.container-bottom {
+.section-header-bottom {
 	position: relative;
-	top: 80%;
+	top: 80px;
 	display: flex;
 	justify-content: space-around;
 }

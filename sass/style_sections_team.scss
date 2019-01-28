@@ -2,18 +2,61 @@
 
 .carousel {
 	height: 430px;
+	padding-top: 56px;
 	width: 100%;
 
-	i {
-
+	&::before {
+		border-width: 30px;
+		border-style: solid;
+		border-color: transparent transparent #f0f0f0;
+		content: "";
+		left: 50%;
+		margin-left: -30px;
+		position: absolute;
+		bottom: 100%;
 	}
 }
 
 .carousel-cell {
+	align-items: flex-end;
 	background-size: cover;
+	display: flex;
 	height: 300px;
   	margin-right: 20px;
   	width: 300px;
+}
+
+.cell-description {
+	align-items: center;
+	background-color: #fff;
+	display: flex;
+	height: 73px;
+	justify-content: space-between;
+	padding: 18px;
+	width: 300px;
+
+	h5 {
+		color: #303030;
+		font-size: 18px;
+		font-weight: normal;
+		line-height: 1px;
+	}
+
+	p {
+		color: #8c8c8c;
+		font-size: 14px;
+		line-height: 1px;
+	}
+
+	i {
+		color: #c0c0c0;
+		margin-left: 18px;
+
+		&:hover {
+			cursor: pointer;
+			color: #000;
+		}
+	}
 }
 
 .flickity-page-dots .dot {
