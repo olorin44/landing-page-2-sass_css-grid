@@ -61,7 +61,12 @@ body {
 }
 
 .container-bottom {
-  text-align: center;
+  position: relative;
+  top: 80%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #menu-toggle input {
@@ -434,6 +439,27 @@ blockquote::before {
   height: 430px;
 }
 
+.section-team-title {
+  text-align: center;
+}
+
+.section-team-title h3 {
+  color: #303030;
+  font-size: 27px;
+  margin-top: 60px;
+}
+
+.section-team-title h4 {
+  border-bottom: 1px solid #dfdfdf;
+  margin: 0 auto 55px;
+  width: 109px;
+}
+
+.section-team-title p {
+  color: #979797;
+  font-size: 21px;
+}
+
 .section-portfolio {
   padding-top: 60px;
   text-align: center;
@@ -734,6 +760,10 @@ blockquote::before {
   padding: 25px;
 }
 
+.section-footer i {
+  margin: 0 8px;
+}
+
 .section-footer a, .section-footer i {
   color: #878787;
 }
@@ -750,7 +780,7 @@ blockquote::before {
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  margin-right: 12%;
+  margin-right: 8%;
 }
 
 .section-footer p {

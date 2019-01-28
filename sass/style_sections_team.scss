@@ -28,3 +28,24 @@
 	background-color: #f0f0f0;
 	height: 430px;
 }
+
+.section-team-title {
+	text-align: center;
+
+	h3 {
+		color: #303030;
+		font-size: 27px;
+		margin-top: 60px;
+	}
+
+	h4 {
+		border-bottom: 1px solid #dfdfdf;
+		margin: 0 auto 55px;
+		width: 109px;
+	}
+
+	p {
+		color: #979797;
+		font-size: 21px;
+	}
+}

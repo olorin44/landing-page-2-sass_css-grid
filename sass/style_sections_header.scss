@@ -1,3 +1,5 @@
+//styles for section header
+
 .section-header {
 	background-color: $green-main;
 	color: #fff;
@@ -50,5 +52,8 @@
 }
 
 .container-bottom {
-	text-align: center;
+	position: relative;
+	top: 80%;
+	display: flex;
+	justify-content: space-around;
 }
