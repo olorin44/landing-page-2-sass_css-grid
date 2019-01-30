@@ -53,15 +53,20 @@ body {
   background: rgba(0, 0, 0, 0.2);
   height: 85px;
   margin-top: 80px;
-  transform: skew(-30deg) translateX(40px);
-  width: 430px;
+  width: 400px;
 }
 
 .section-header-right p {
   font-size: 18px;
-  padding-right: 180px;
+  padding-right: 100px;
   text-align: right;
-  transform: skew(30deg);
+}
+
+.section-header-right span {
+  top: 10px;
+  border-top: 86px solid #39a38f;
+  border-right: 86px solid transparent;
+  position: relative;
 }
 
 .section-header-bottom {
@@ -908,16 +913,17 @@ blockquote::before {
     font-size: 14px;
   }
   .section-header .section-header-right {
-    height: 60px;
-    margin-top: 40px;
     width: 230px;
   }
   .section-header .section-header-right p {
     font-size: 14px;
-    padding-right: 80px;
+    padding-right: 10px;
+  }
+  .section-header .section-header-right span {
+    top: 26px;
   }
   .section-header .section-header-bottom {
-    top: -20px;
+    top: 0;
   }
   .section-menu #menu-toggle {
     display: block;
@@ -971,12 +977,16 @@ blockquote::before {
   .section-menu .section-menu-logo, .section-menu .section-menu-socialmedia {
     margin: 0 20px;
   }
+  .section-about-clients img {
+    margin: 20px 20px;
+  }
   .section-services-products {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     grid-row-gap: 40px;
+    padding: 0 10px;
   }
   .section-services-products-1 {
     -ms-grid-column: 1;
@@ -1014,6 +1024,9 @@ blockquote::before {
     -ms-grid-row: 3;
         grid-row: 3;
   }
+  blockquote::after {
+    right: 0;
+  }
   .section-portfolio-squares {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
@@ -1028,7 +1041,7 @@ blockquote::before {
     font-size: 16px;
   }
   .section-contact-background {
-    height: 1300px;
+    height: 1400px;
   }
   .section-contact-form {
     padding: 10px 30px 30px;
@@ -1053,7 +1066,7 @@ blockquote::before {
     width: 100%;
   }
   .section-contact-form-right {
-    bottom: 0;
+    bottom: -50px;
     width: 100%;
   }
   .section-contact-info > div {
@@ -1066,14 +1079,11 @@ blockquote::before {
     grid-row-gap: 20px;
   }
   .section-footer-container {
-    padding: 0 70px;
+    padding: 0 40px;
   }
 }
 
-@media (max-width: 600px) {
-  .section-header {
-    height: 260px;
-  }
+@media (max-width: 620px) {
   .section-header .section-header-left {
     margin: 30px 0 0 20px;
   }
@@ -1089,12 +1099,8 @@ blockquote::before {
   .section-header .section-header-left h6 {
     font-size: 12px;
   }
-  .section-header .section-header-right {
-    width: 210px;
-  }
-  .section-header .section-header-right p {
-    font-size: 13px;
-    padding-right: 60px;
+  .section-header-right {
+    display: none;
   }
   .section-about h1 {
     font-size: 28px;
@@ -1186,9 +1192,6 @@ blockquote::before {
     -ms-grid-row: 6;
         grid-row: 6;
   }
-  blockquote::after {
-    right: 0;
-  }
   .section-quote div {
     max-width: 600px;
   }
@@ -1270,7 +1273,13 @@ blockquote::before {
     grid-row-gap: 20px;
   }
   .section-footer-container {
-    padding: 0 10px;
+    display: block;
+  }
+  .section-footer-container a {
+    margin-left: 45%;
+  }
+  .section-footer-socialmedia {
+    margin-top: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

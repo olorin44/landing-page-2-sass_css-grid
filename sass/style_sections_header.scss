@@ -42,14 +42,19 @@
 	background: rgba(#000, 0.2);
 	height: 85px;
 	margin-top: 80px;
-	transform: skew(-30deg) translateX(40px);
-	width: 430px;
+	width: 400px;
 
 	p {
 		font-size: 18px;
-		padding-right: 180px;
+		padding-right: 100px;
 		text-align: right;
-		transform: skew(30deg);
+	}
+
+	span {
+		top: 10px;
+		border-top: 86px solid $green-main;
+		border-right: 86px solid transparent;
+		position: relative;
 	}
 }
 
