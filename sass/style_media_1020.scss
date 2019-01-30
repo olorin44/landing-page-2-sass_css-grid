@@ -1,0 +1,56 @@
+@media (max-width: 1020px) {
+
+//styles for section header
+	.section-header-left {
+		margin: 60px 0 0 60px;
+
+		h1 {
+			font-size: 80px;
+		}
+
+		h3 {
+			font-size: 40px;
+		}
+
+		h4 {
+			font-size: 24px;
+		}
+
+		h6 {
+			font-size: 16px;
+		}
+	}
+
+//styles for section menu
+	.section-menu {
+		.nav-links {
+			a {
+					margin-left: 10px;
+				}
+		}
+
+		.section-menu-logo {
+			margin: 0 60px;
+		}
+
+		.section-menu-socialmedia {
+			margin: 0 20px;
+		}
+	}
+
+//styles for section services
+	.section-services-products {
+		grid-template-columns: 1fr 260px 1fr 260px 1fr 260px 1fr;
+		grid-row-gap: 40px;
+	}
+	
+//styles for section portfolio
+	.section-portfolio-squares {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+//styles for section footer
+	.section-footer-container {
+		padding: 0 70px;
+	}
+}

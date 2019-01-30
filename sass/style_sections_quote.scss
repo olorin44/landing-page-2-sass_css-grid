@@ -6,22 +6,22 @@ blockquote {
 	position: relative;
 }
 
-blockquote::after {
-	bottom: -.8em;
+blockquote::after, blockquote::before {
 	content: '\201D';
-	float: right;
-	font-size: 10em;
 	opacity: .3;
 	position: absolute;
+}
+
+blockquote::after {
+	bottom: -.8em;
+	float: right;
+	font-size: 10em;
 	right: 1em;
 }
 
 blockquote::before {
-	content: '\201D';
 	font-size: 10em;
 	left: 0;
-	opacity: .3;
-	position: absolute;
 	top: -.2em;
 }
 
