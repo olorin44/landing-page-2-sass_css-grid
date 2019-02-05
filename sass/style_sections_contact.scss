@@ -19,7 +19,7 @@
 		font-weight: normal;
 	}
 
-	h4 {
+	.section-contact-title-line {
 		border-bottom: 1px solid #dfdfdf;
 		margin: 0 auto 45px;
 		width: 109px;
@@ -104,12 +104,12 @@
 
 	width: 80%;
 
-	h5, p {
+	.section-contact-form-required, p {
 		display: inline-block;
 		line-height: 1px;
 	}
 
-	h5 {
+	.section-contact-form-required {
 		color: $green-main;
 		float: right;
 		font-size: 12px;
@@ -146,7 +146,8 @@
 		font-size: 23px;
 	}
 	
-	h4 {
+	.item2, .item4, .item6 {
+		color: #303030;
 		font-size: 18px;
 		font-weight: normal;
 	}

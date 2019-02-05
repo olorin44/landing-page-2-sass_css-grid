@@ -19,7 +19,7 @@
 				font-size: 18px;
 			}
 
-			h6 {
+			.section-header-left-subtitle {
 				font-size: 14px;
 			}
 		}
@@ -53,7 +53,7 @@
 			z-index: 2;
 
 			&:hover span {
-				background: green;
+				background-color: #fff;
 			}
 		}
 
@@ -80,6 +80,24 @@
 
 		#menu-toggle input:checked ~ ul {
 			transform: none;
+		}
+
+		#menu-toggle input:checked ~ span {
+			left: 20px;
+			top: 10px;
+			transition: transform 0.2s;
+		}
+
+		#menu-toggle input:checked ~ .menu-span-up {
+			transform: rotate(45deg) translateX(7px);
+		}
+
+		#menu-toggle input:checked ~ .menu-span-down {
+			transform: rotate(-45deg) translateX(7px);
+		}
+
+		#menu-toggle input:checked ~ .menu-span-middle {
+			display: none;
 		}
 
 		#menu {
