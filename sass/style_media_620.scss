@@ -175,60 +175,8 @@
 	}
 
 //styles for section contact
-	.section-contact {
-		padding-top: 40px;
-	}
-
-	.section-contact-title {
-
-		h3 {
-			font-size: 22px;
-		}
-
-		p {
-			font-size: 16px;
-		}
-	}
-
-	.section-contact-background {
-		height: 1500px;
-	}
-
-	.section-contact-form {
-		padding: 10px 30px 30px;
-		width: 90%;
-
-		button {
-			bottom: 500px;
-		}
-
-		input, textarea {
-			width: 100%;
-		}
-	}
-
-	.section-contact-form-container > div {
-		width: 100%;
-	}
-
-	.section-contact-form-left, .section-contact-form-right {
-		display: block;
-	}
-
-	.section-contact-form-left {
-		width: 100%;
-	}
-
 	.section-contact-form-right {
 		bottom: -100px;
-		width: 100%;
-	}
-
-	.section-contact-info > div {
-		display: grid;
-		grid-template-columns: 2fr 4fr;
-		grid-template-rows: 1fr 1fr 1fr;
-		grid-row-gap: 20px;
 	}
 
 //styles for section footer

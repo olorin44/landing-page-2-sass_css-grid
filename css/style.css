@@ -714,7 +714,7 @@ blockquote::before {
 .section-contact-form {
   background-color: #fff;
   margin: 240px auto 0;
-  padding: 0 50px 50px;
+  padding: 50px;
   width: 80%;
 }
 
@@ -1072,14 +1072,14 @@ blockquote::before {
     font-size: 16px;
   }
   .section-contact-background {
-    height: 1400px;
+    height: 1500px;
   }
   .section-contact-form {
     padding: 10px 30px 30px;
     width: 90%;
   }
   .section-contact-form button {
-    bottom: 500px;
+    bottom: 520px;
   }
   .section-contact-form form {
     height: 1400px;
@@ -1257,49 +1257,8 @@ blockquote::before {
   .section-portfolio-squares .square6 p {
     font-size: 14px;
   }
-  .section-contact {
-    padding-top: 40px;
-  }
-  .section-contact-title h3 {
-    font-size: 22px;
-  }
-  .section-contact-title p {
-    font-size: 16px;
-  }
-  .section-contact-background {
-    height: 1500px;
-  }
-  .section-contact-form {
-    padding: 10px 30px 30px;
-    width: 90%;
-  }
-  .section-contact-form button {
-    bottom: 500px;
-  }
-  .section-contact-form input, .section-contact-form textarea {
-    width: 100%;
-  }
-  .section-contact-form-container > div {
-    width: 100%;
-  }
-  .section-contact-form-left, .section-contact-form-right {
-    display: block;
-  }
-  .section-contact-form-left {
-    width: 100%;
-  }
   .section-contact-form-right {
     bottom: -100px;
-    width: 100%;
-  }
-  .section-contact-info > div {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 2fr 4fr;
-        grid-template-columns: 2fr 4fr;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    grid-row-gap: 20px;
   }
   .section-footer-container {
     display: block;
