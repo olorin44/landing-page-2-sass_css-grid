@@ -44,6 +44,13 @@
 
 //styles for section menu
 	.section-menu {
+		position: static;
+
+		li > a:hover {
+			color: #fff;
+			font-weight: bold;
+		}
+
 		#menu-toggle {
 			display: block;
 			left: 10px;
@@ -114,8 +121,12 @@
 			width: 150px;
 		}
 
-		.section-menu-logo, .section-menu-socialmedia {
-			margin: 0 20px;
+		.section-menu-logo {
+			margin: 0;
+		}
+
+		.section-menu-socialmedia {
+			margin: 0;
 		}
 	}
 

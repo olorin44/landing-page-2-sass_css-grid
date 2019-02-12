@@ -3,6 +3,7 @@
 (function() {
 	let galleryTemplate = document.getElementById('gallery-template').innerHTML;
 	let galleryList = '';
+	
 	for(var i= 0; i < galleryData.length; i++) {
 		galleryList += Mustache.render(galleryTemplate, galleryData[i]);
 	}

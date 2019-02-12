@@ -1,4 +1,4 @@
-* {
+*, *::after, *::before {
   box-sizing: border-box;
 }
 
@@ -102,7 +102,7 @@ body {
   display: inline-flex;
 }
 
-.container {
+.section-menu > .container {
   -ms-flex-align: center;
       align-items: center;
   display: -ms-flexbox;
@@ -112,13 +112,19 @@ body {
       justify-content: space-around;
 }
 
-.container .section-menu-logo {
-  margin: 0 130px;
-}
-
 .section-menu {
   border-bottom: 1px solid #dfdfdf;
+  background-color: #fff;
   color: #c0c0c0;
+  opacity: .9;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.section-menu-logo {
+  margin: 0 130px;
 }
 
 .section-menu-socialmedia {
@@ -834,6 +840,7 @@ blockquote::before {
 }
 
 .section-footer a:hover, .section-footer i:hover {
+  color: #fff;
   cursor: pointer;
 }
 
@@ -925,6 +932,13 @@ blockquote::before {
   .section-header .section-header-bottom {
     top: 0;
   }
+  .section-menu {
+    position: static;
+  }
+  .section-menu li > a:hover {
+    color: #fff;
+    font-weight: bold;
+  }
   .section-menu #menu-toggle {
     display: block;
     left: 10px;
@@ -988,8 +1002,11 @@ blockquote::before {
     transition: transform 0.2s;
     width: 150px;
   }
-  .section-menu .section-menu-logo, .section-menu .section-menu-socialmedia {
-    margin: 0 20px;
+  .section-menu .section-menu-logo {
+    margin: 0;
+  }
+  .section-menu .section-menu-socialmedia {
+    margin: 0;
   }
   .section-about-clients img {
     margin: 20px 20px;
@@ -1137,6 +1154,7 @@ blockquote::before {
   }
   .section-about-clients img {
     margin: 20px 20px;
+    width: 80%;
   }
   .section-about-features {
     -ms-grid-columns: 1fr 207px 1fr;
