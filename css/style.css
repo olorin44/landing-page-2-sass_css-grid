@@ -933,7 +933,7 @@ blockquote::before {
     top: 0;
   }
   .section-menu {
-    position: static;
+    position: relative;
   }
   .section-menu li > a:hover {
     color: #fff;
