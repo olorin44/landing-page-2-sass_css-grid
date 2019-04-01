@@ -72,6 +72,10 @@
 			position: absolute;
 			width: 40px;
 			z-index: 3;
+
+			&:checked {
+				transform: translateX(20px);
+			}
 		}
 
 		#menu-toggle span {

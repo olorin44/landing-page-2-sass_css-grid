@@ -7,6 +7,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 .section-header {
@@ -961,6 +962,9 @@ blockquote::before {
     position: absolute;
     width: 40px;
     z-index: 3;
+  }
+  .section-menu #menu-toggle input:checked {
+    transform: translateX(20px);
   }
   .section-menu #menu-toggle span {
     background: #d0d0d0;
