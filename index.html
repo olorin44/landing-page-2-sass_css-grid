@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body>
-	<section class="section-header" id="header">
+	<header class="section-header" id="header">
 		<div class="section-header-container">
 			<div class="section-header-left">
 				<h1>Roran.</h1>
@@ -29,7 +29,7 @@
 		<div class="section-header-bottom">
 			<img src="images/section-header-arrows.png" alt="arrows">
 		</div>
-	</section>
+	</header>
 	<section class="section-menu">
 		<div class="container">
 			<a href="#" class="section-menu-logo">
@@ -267,7 +267,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="section-footer">
+	<footer class="section-footer">
 		<div class="section-footer-container">
 			<p>&copy; 2014 Roran. All rights reserved</p>
 			<a href="#header"><img src="images/section-footer-arrow.png" alt="arrow"></a>
@@ -278,7 +278,7 @@
 				<i class="fab fa-facebook-f"></i>
 			</div>
 		</div>
-	</section>
+	</footer>
 	<script>
 		let galleryData = [
 			{
@@ -313,7 +313,7 @@
 			}
 		];
 	</script>
-	<script type="x-tmpl-mustache" id="gallery-template">
+	<script type="x-tmpl-mustache/javascript" id="gallery-template">
 		<div class="template-container">
 			<div class="carousel-cell" style="background-image: url( {{ image }} );">
 				<div class=cell-description>
